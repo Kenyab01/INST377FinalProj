@@ -1,0 +1,78 @@
+<html>
+    <head> <title> Mapping!</title>  
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="">
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+        <style>
+            h1{
+                margin-top: 50px;
+                color: red;
+            }
+            nav {
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            color: red; 
+        }
+            #map {width: 600px; height: 400px;}
+        </style>
+        </head>
+    <body>
+        <!--Header-->
+        <header>
+            <h1>TerraBus</h1>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li><a href="plan_my_trip.html">Plan Your Trip</a></li>
+                <li><a href="view_routes">View All Routess</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <!--Form For Nearby Routes-->    
+        <form id= "route_form" class = "route_form">
+            <label for="From">From</label>
+            <input type="text" id="from" name="from" placeholder="Enter starting location" required>
+            <label for="To">To</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination" required>
+            <button type="submit">Go</button>
+        </form>
+
+        <!--Map that will pop up-->
+        <div id="map" class="map"></div>
+    </body>
+    <script src="plan_my_trip.js" defer>        
+    </script>
+</html>
