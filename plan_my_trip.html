@@ -62,19 +62,17 @@
             </ul>
         </nav>
         <!--Form For Nearby Routes-->    
-        <div>
-            <label for="fromLocation">From:</label>
-            <input type="text" id="fromLocation" placeholder="e.g. The Cheesecake Factory, Washington, DC" />
-            <button onclick="geocodeLocation(document.getElementById('fromLocation').value, 'from')">Search From</button>
-          </div>
-          <div>
-            <label for="toLocation">To:</label>
-            <input type="text" id="toLocation" placeholder="e.g. Starbucks, Georgetown, Washington, DC" />
-            <button onclick="geocodeLocation(document.getElementById('toLocation').value, 'to')">Search To</button>
-          </div>          
+        <form id= "route_form" class = "route_form">
+            <label for="From">From</label>
+            <input type="text" id="from" name="from" placeholder="Enter starting location" required>
+            <label for="To">To</label>
+            <input type="text" id="to" name="to" placeholder="Enter destination" required>
+            <button type="submit">Go</button>
+        </form>
 
         <!--Map that will pop up-->
         <div id="map" class="map"></div>
+        
     </body>
     <script src="plan_my_trip.js" defer>        
     </script>
