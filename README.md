@@ -1,15 +1,13 @@
-# INST377 Final Project
-Project Title
-Bus Tracker Application called TerraBus
+# TerraBus
 
-Description
-The Bus Tracker Application is a web-based system designed to help users search for bus routes, track real-time bus locations, and save their favorite routes for easy access. The application aims to improve public transport navigation by offering a user-friendly interface and up-to-date bus position data.
+### Description
+TerraBus is a web-based bus tracker application designed to help users search for bus routes, track real-time bus locations, and save their favorite routes for easy access. The application aims to improve public transport navigation by offering a user-friendly interface and up-to-date bus position data.
 
-Features:
-User authentication via a login page.
-Search and save favorite or commonly used bus routes.
-Interactive map displaying current bus positions and routes.
+### Target Browsers
+Our target browsers are individuals on iOS (Safari) and Android (Chrome), while also applicable to desktop users such as Chrome, Firefox, Edge, and Safari (latest versions). As we utilized the Washington Metropolitan Area Transit Authority API (WMATA), our target browsers are daily commuters, tourists, and local residents within Washington D.C.
 
-Target Browsers
-Mobile Devices: iOS (Safari), Android (Chrome).
-Desktop Browsers: Chrome, Firefox, Edge, Safari (latest versions).
+## Developers Manual:
+
+INST377 - TerraBus
+-----------------------
+**How to install the application and all dependencies**
