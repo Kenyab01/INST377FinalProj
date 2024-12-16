@@ -13,12 +13,15 @@ The target browsers for TerraBus include individuals using both iOS and Android 
 The application and dependencies can be installed after installing Node.js and npm into your terminal. The JS library used is **leaflet.js** to render interactive maps in the application. 
 
 **How to run your application on a server**
+
 To run TerraBus on a server, navigate to the directory containing **backend.js** and run backend.js. Next, use any static file server like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to serve the front end. Alternatively, you can open the HTML files directly in your browser, but running it through a server is recommended for full API functionality. 
 
 **How to run any tests you have written for your software**
+
 To run ant tests for our software, use npm start within your terminal. 
 
 **The API for our server application**
+
 API endpoints used in our application include:
 1. **WMATA API (External):**
    - https://api.wmata.com/Bus.svc/json/jRoutes
