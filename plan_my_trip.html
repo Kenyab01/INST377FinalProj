@@ -63,15 +63,15 @@
         </nav>
         <!--Form For Nearby Routes-->    
         <form id= "route_form" class = "route_form">
-            <label for="From">From</label>
-            <input type="text" id="from" name="from" placeholder="Enter starting location" required>
-            <label for="To">To</label>
-            <input type="text" id="to" name="to" placeholder="Enter destination" required>
-            <button type="submit">Go</button>
+            <label for="CurrLocation">Your Current Location:</label>
+            <input type="text" id="CurrLocation" name="CurrLocation" placeholder="Enter your current location" required>
+            <button type="submit">View Nearby Routes</button>
         </form>
 
         <!--Map that will pop up-->
         <div id="map" class="map"></div>
+        <button class="next" onclick="window.location.href='view_routes.html'">Pick Your Route on The Next Page</button>
+
         
     </body>
     <script src="plan_my_trip.js" defer>        
