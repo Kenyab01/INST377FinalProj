@@ -6,10 +6,9 @@ TerraBus is a web-based bus tracker application designed to help users search fo
 ### Target Browsers
 The target browsers for TerraBus include individuals using both iOS and Android devices. However, for the best experience, we recommend using a laptop or computer. The application leverages real-time data, which is most effectively displayed on larger screens. The API used in the application, WMATA (Washington Metropolitan Area Transit Authority), provides bus and metro data for Washington D.C., so it is best suited for users located in or around the D.C. area.
 
+-----------------------
 ## Developers Manual:
 
-INST377 - TerraBus
------------------------
 **How to install the application and all dependencies**
 
 The application and dependencies can be installed after installing Node.js and npm into your terminal. The JS library used is **leaflet.js** to render interactive maps in the application. 
