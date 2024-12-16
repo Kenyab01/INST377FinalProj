@@ -4,61 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WMATA Routes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-
-        h1, h3 {
-            color: #333;
-        }
-
-        select, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #0078d7;
-            color: white;
-            cursor: pointer;
-            border: none;
-        }
-
-        button:hover {
-            background-color: #005499;
-        }
-
-        .route-info, .favorites {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .favorite-item {
-            padding: 5px 0;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .favorite-item:last-child {
-            border-bottom: none;
-        }
-
-        form {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="view.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="plan_my_trip.html">Plan Your Trip</a></li>
+            <li><a href="view_routes.html">View All Routes</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
     <h1>WMATA Bus Routes</h1>
 
     <label for="route-dropdown">Select a Route:</label>
@@ -82,5 +40,7 @@
     </div>
 
     <script src="view_routes.js" defer></script>
+
 </body>
 </html>
+
