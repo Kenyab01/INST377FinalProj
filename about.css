@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ h1 {
+    margin-top: 50px;
+    color: red;
+ }
+ 
+ 
+ nav {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+ }
+ 
+ 
+ nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+ }
+ 
+ 
+ nav ul li {
+    display: inline-block;
+ }
+ 
+ 
+ nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+ }
+ 
+ 
+ nav ul li a:hover {
+    color: red;
+ }
+ 
+ 
+ .content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ 
+ 
+ .box-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+ }
+ 
+ 
+ .box {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+ }
+ 
+ 
+ .box h2 {
+    margin-bottom: 15px;
+    color: red;
+ }
+ 
+ 
+ .box p {
+    margin: 0;
+    line-height: 1.6;
+ }
+ 
+ 
+ .headshots-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ddd;
+ }
+ 
+ 
+ .headshot {
+    text-align: center;
+    width: 150px; /* Same width as the image */
+ }
+ 
+ 
+ .headshot img {
+    width: 100%;
+    height: 200px; /* Same height as before */
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+ }
+ 
+ 
+ .headshot figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+ }
+ 
+ 
+ #contact-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+ }
+ 
+ 
+ #contact-section h2 {
+    text-align: center;
+    color: red;
+ }
+ 
+ 
+ form {
+    max-width: 600px;
+    margin: 20px auto;
+ }
+ 
+ 
+ form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+ }
+ 
+ 
+ form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+ 
+ 
+ form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+ }
+ 
+ 
+ form input[type="submit"]:hover {
+    background-color: red;
+ }
+ 
+ 
+ #thank-you-message {
+    display: none;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+ }
+ .team-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+ }
+ 
+ 
+ .team-section h2 {
+    font-size: 24px;
+    color: red; /* Match the color scheme of other headers */
+    margin-bottom: 20px;
+ }
+ 

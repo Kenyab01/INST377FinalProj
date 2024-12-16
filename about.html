@@ -1,196 +1,113 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-    <title>About Us</title>
-    <style>
-        h1 {
-            margin-top: 50px;
-            color: red;
-        }
-        nav {
-            width: 100%;
-            background-color: #333;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-        nav ul li {
-            display: inline-block;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            display: block;
-        }
-        nav ul li a:hover {
-            color: red; 
-        }
-        .content {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .box-container {
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .box {
-            flex: 1;
-            background-color: #f4f4f4;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .box h2 {
-            margin-bottom: 15px;
-            color: red;
-        }
-        .box p, .box ul {
-            margin: 0;
-            line-height: 1.6;
-        }
-        .box ul {
-            list-style: none;
-            padding: 0;
-        }
-        .box ul li {
-            margin: 5px 0;
-        }
-        #contact-section {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-top: 2px solid #ddd;
-        }
-        #contact-section h2 {
-            text-align: center;
-            color: red;
-        }
-        form {
-            max-width: 600px;
-            margin: 20px auto;
-        }
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form input[type="submit"] {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 10px 20px;
-        }
-        form input[type="submit"]:hover {
-            background-color: red;
-        }
-        #thank-you-message {
-            display: none;
-            margin-top: 20px;
-            color: green;
-            font-weight: bold;
-            text-align: center;
-        }
-    </style>
+   <title>About Us</title>
+   <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <h1>TerraBus</h1>
-    </header>
-    <!--Navigation-->
-    <nav>
-        <ul>
-            <li><a href="plan_my_trip.html">Plan Your Trip</a></li>
-            <li><a href="view_routes.html">View All Routes</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-    </nav>
+   <!--Header-->
+   <header>
+       <h1>TerraBus</h1>
+   </header>
+   <!--Navigation-->
+   <nav>
+       <ul>
+           <li><a href="plan_my_trip.html">Plan Your Trip</a></li>
+           <li><a href="view_routes.html">View All Routes</a></li>
+           <li><a href="about.html">About Us</a></li>
+       </ul>
+   </nav>
 
-    <!--About-->
-    <div class="content">
-        <div class="box-container">
-            <div class="box">
-                <h2>About TerraBus</h2>
-                <p>
-                    TerraBus is a project designed to enhance the public transit 
-                    experience in Washington D.C. by providing real-time bus and 
-                    metro updates. Our platform ensures commuters, tourists, and 
-                    residents have access to accurate and timely information for 
-                    a smoother journey.
-                </p>
-            </div>
-            <div class="box">
-                <h2>Our Mission</h2>
-                <p>
-                    Our mission is to improve the commuting experience by offering 
-                    reliable and user-friendly access to public transit data. We 
-                    aim to reduce travel uncertainties and make public transportation 
-                    a more attractive and efficient choice.
-                </p>
-            </div>
-            <div class="box">
-                <h2>Features</h2>
-                <p>
-                    Our platform offers real-time bus tracking and delay notifications, 
-                    interactive maps with nearby stops and routes, and historical data 
-                    insights to enhance travel planning.
-                </p>
-            </div>
-        </div>
-    </div>
 
-    <!--Contact-->
-    <div id="contact-section">
-        <h2>Contact Us</h2>
-        <p style="text-align: center;">
-            Have questions or feedback? Use the form below to reach out to us, or email us at 
-            <a href="mailto:info@terrabus.com">info@terrabus.com</a>.
-        </p>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-            
-            <input type="submit" value="Send Message">
-        </form>
+   <!--About-->
+   <div class="content">
+       <div class="box-container">
+           <div class="box">
+               <h2>About TerraBus</h2>
+               <p>
+                   TerraBus is a project designed to enhance the public transit
+                   experience in Washington D.C. by providing real-time bus and
+                   metro updates. Our platform ensures commuters, tourists, and
+                   residents have access to accurate and timely information for
+                   a smoother journey.
+               </p>
+           </div>
+           <div class="box">
+               <h2>Our Mission</h2>
+               <p>
+                   Our mission is to improve the commuting experience by offering
+                   reliable and user-friendly access to public transit data. We
+                   aim to reduce travel uncertainties and make public transportation
+                   a more attractive and efficient choice.
+               </p>
+           </div>
+           <div class="box">
+               <h2>Features</h2>
+               <p>
+                   Our platform offers real-time bus tracking and delay notifications,
+                   interactive maps with nearby stops and routes, and historical data
+                   insights to enhance travel planning.
+               </p>
+           </div>
+       </div>
+   </div>
 
-        <div id="thank-you-message">Thank you for contacting us! We will get back to you soon.</div>
-    </div>
 
-    <script>
-       // Contact form submission logic
-       document.getElementById('contact-form').addEventListener('submit', function(event) {
-           event.preventDefault();
-           document.getElementById('thank-you-message').style.display = 'block';
-           this.reset();
-       });
-    </script>
+   <!--Contact-->
+   <div id="contact-section">
+       <h2>Contact Us</h2>
+       <p style="text-align: center;">
+           Have questions or feedback? Use the form below to reach out to us, or email us at
+           <a href="mailto:info@terrabus.com">info@terrabus.com</a>.
+       </p>
+       <form id="contact-form">
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="name" placeholder="Your name" required>
+          
+           <label for="email">Email:</label>
+           <input type="email" id="email" name="email" placeholder="Your email" required>
+          
+           <label for="message">Message:</label>
+           <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          
+           <input type="submit" value="Send Message">
+       </form>
+
+
+       <div id="thank-you-message">Thank you for contacting us! We will get back to you soon.</div>
+   </div>
+   <div class="team-section">
+       <h2>Meet the Team!</h2>
+       <div class="headshots-section">
+           <figure class="headshot">
+               <img src="images/kenyaINST377.jpeg" alt="Kenya Branche">
+               <figcaption>Kenya Branche</figcaption>
+           </figure>
+           <figure class="headshot">
+               <img src="images/leonINST377.jpeg" alt="Leon Tran">
+               <figcaption>Leon Tran</figcaption>
+           </figure>
+           <figure class="headshot">
+               <img src="images/sahiraINST377.jpg" alt="Sahira Chugh">
+               <figcaption>Sahira Chugh</figcaption>
+           </figure>
+           <figure class="headshot">
+               <img src="images/srikarINST377.jpeg" alt="Srikar Gosakan">
+               <figcaption>Srikar Gosakan</figcaption>
+           </figure>
+       </div>
+   </div>
+   <script>
+      // Contact form submission logic
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          document.getElementById('thank-you-message').style.display = 'block';
+          this.reset();
+      });
+   </script>
 </body>
 </html>
+
+
+
