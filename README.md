@@ -6,7 +6,6 @@ TerraBus is a web-based bus tracker application designed to help users search fo
 ### Target Browsers
 The target browsers for TerraBus include individuals using both iOS and Android devices. However, for the best experience, we recommend using a laptop or computer. The application leverages real-time data, which is most effectively displayed on larger screens. The API used in the application, WMATA (Washington Metropolitan Area Transit Authority), provides bus and metro data for Washington D.C., so it is best suited for users located in or around the D.C. area.
 
------------------------
 ## Developers Manual:
 
 **How to install the application and all dependencies**
@@ -25,7 +24,7 @@ API endpoints used in our application include:
    - https://api.wmata.com/Bus.svc/json/jRoutes
      - This fetches all available bus routes in the Washington D.C. area.
    - https://api.wmata.com/Bus.svc/json/jBusPositions?Lat={lat}&Lon={lon}&Radius=5000
-     - This fetches real-time bus positions within a 5 km radius of a given latitude         and longitude.
+     - This fetches real-time bus positions within a 5 km radius of a given latitude and longitude.
 2. **Custom Backend API (Internal)**
    - /api/favorite-routes (POST)
      - This adds a bus route to the user's favorites.
@@ -33,6 +32,7 @@ API endpoints used in our application include:
      - This retrieves all saved favorite bus routes from the user's session.
 
 **A clear set of expectations around known bugs and a road-map for future development**
+
 Known Bugs
 1. Location Geocoding: The current implementation uses the OpenStreetMap Nominatim API to geocode locations, which might occasionally fail for non-existent or misspelled locations, or if the API exceeds rate limits.
 2. Real-Time Data: The WMATA API may sometimes return no data for bus positions, especially if there is an issue with the live tracking or if no buses are within the specified radius.
