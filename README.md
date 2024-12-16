@@ -8,19 +8,19 @@ The target browsers for TerraBus include individuals using both iOS and Android 
 
 ## Developers Manual:
 
-**How to install the application and all dependencies**
+**HOW TO INSTALL THE APPLICATION AND ALL DEPENDENCIES**
 
 The application and dependencies can be installed after installing Node.js and npm into your terminal. The JS library used is **leaflet.js** to render interactive maps in the application. 
 
-**How to run your application on a server**
+**HOW TO RUN OUR APPLICATION ON A SERVER**
 
 To run TerraBus on a server, navigate to the directory containing **backend.js** and run backend.js. Next, use any static file server like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to serve the front end. Alternatively, you can open the HTML files directly in your browser, but running it through a server is recommended for full API functionality. 
 
-**How to run any tests you have written for your software**
+**HOW TO RUN ANY TESTS FOR OUR SOFTWARE**
 
 To run ant tests for our software, use npm start within your terminal. 
 
-**The API for our server application**
+**THE API FOR OUR SERVER APPLICATION**
 
 API endpoints used in our application include:
 1. **WMATA API (External):**
@@ -34,13 +34,13 @@ API endpoints used in our application include:
    - /api/favorite-routes (GET)
      - This retrieves all saved favorite bus routes from the user's session.
 
-**A clear set of expectations around known bugs and a road-map for future development**
+**EXPECTATIONS AROUND KNOWN BUGS AND FUTURE DEVELOPMENT**
 
-Known Bugs
+**Known Bugs**
 1. Location Geocoding: The current implementation uses the OpenStreetMap Nominatim API to geocode locations, which might occasionally fail for non-existent or misspelled locations, or if the API exceeds rate limits.
 2. Real-Time Data: The WMATA API may sometimes return no data for bus positions, especially if there is an issue with the live tracking or if no buses are within the specified radius.
 3. Favorites: The favorites list is stored temporarily in memory, meaning it is lost when the server is restarted. A more permanent solution, such as a database, would be ideal.
 
-Future Development
+**Future Development**
 1. Database Integration: Integrate a persistent database to store user favorites and preferences, ensuring data is saved between server restarts.
 2. User Authentication: Add user authentication with session management to allow users to log in and manage their personal favorite routes.
