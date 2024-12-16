@@ -61,25 +61,21 @@
 <body>
     <h1>WMATA Bus Routes</h1>
 
-    <!-- Dropdown to Select a Route -->
     <label for="route-dropdown">Select a Route:</label>
     <select id="route-dropdown">
         <option value="" disabled selected>Choose a route...</option>
     </select>
 
-    <!-- Route Information -->
     <div id="route-info" class="route-info" style="display:none;">
         <h3 id="route-ID"></h3>
         <p><strong>Name:</strong> <span id="route-name"></span></p>
         <p><strong>Line Description:</strong> <span id="line-description"></span></p>
 
-        <!-- Save to Favorites Form -->
         <form id="save-to-favorites-form">
-            <button type="submit" onclick="backend_favorites()">Save to Favorites</button>
+            <button type="submit">Save to Favorites</button>
         </form>
     </div>
 
-    <!-- Favorites Display -->
     <div class="favorites">
         <h3>Your Favorite Routes</h3>
         <div id="favorites-container"></div>

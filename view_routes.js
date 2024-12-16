@@ -12,13 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let allRoutes = [];
     let selectedRoute = null;
 
-    // Fetch and populate WMATA routes
     fetch(ROUTE_API, {
         method: 'GET',
         headers: { 'api_key': 'ff1282b4e3ea4a70874cf83bf6510a26' }
     })
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
         if (data.Routes && data.Routes.length > 0) {
             allRoutes = data.Routes;
             populateDropdown(allRoutes);
@@ -26,11 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("No routes found.");
         }
     })
-    .catch((error) => console.error("Error fetching routes:", error));
+    .catch(error => console.error("Error fetching routes:", error));
 
-    // Populate dropdown with route names
     function populateDropdown(routes) {
-        routes.forEach((route) => {
+        routes.forEach(route => {
             const option = document.createElement("option");
             option.value = route.RouteID;
             option.textContent = route.Name;
@@ -38,20 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Display route details on selection
     routeDropdown.addEventListener("change", () => {
         const selectedRouteID = routeDropdown.value;
         selectedRoute = allRoutes.find(route => route.RouteID === selectedRouteID);
-
         if (selectedRoute) {
             routeID.textContent = `Route ID: ${selectedRoute.RouteID}`;
             routeName.textContent = selectedRoute.Name;
-            lineDescription.textContent = selectedRoute.LineDescription || "No description available.";
+            lineDescription.textContent = selectedRoute.LineDescription || "Description not available.";
             document.getElementById("route-info").style.display = "block";
         }
     });
 
-    // Save selected route to favorites via the form
     saveForm.addEventListener("submit", (event) => {
         event.preventDefault();
         if (!selectedRoute) {
@@ -64,24 +59,19 @@ document.addEventListener("DOMContentLoaded", () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ routeId: selectedRoute.RouteID })
         })
-        .then((response) => response.json())
-        .then((data) => {
-            if (data.error) {
-                alert(data.error);
-            } else {
-                alert(`Route "${selectedRoute.Name}" added to favorites!`);
-                fetchFavorites();
-            }
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message); 
+            fetchFavorites();
         })
-        .catch((error) => console.error("Error saving to favorites:", error));
+        .catch(error => console.error("Error saving to favorites:", error));
     });
 
-    // Fetch and display favorite routes
-    function fetchFavorites() {
+    async function fetchFavorites() {
         fetch(BACKEND_API)
-            .then((response) => response.json())
-            .then((data) => {
-                favoritesContainer.innerHTML = ""; // Clear current list
+            .then(response => response.json())
+            .then(data => {
+                favoritesContainer.innerHTML = ""; 
                 if (data.favoriteRoutes.length === 0) {
                     favoritesContainer.textContent = "No favorite routes saved yet.";
                     return;
@@ -95,10 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     favoritesContainer.appendChild(favoriteItem);
                 });
             })
-            .catch((error) => console.error("Error fetching favorites:", error));
+            .catch(error => console.error("Error fetching favorites:", error));
     }
-
-    // Load favorites on page load
     fetchFavorites();
-    
 });

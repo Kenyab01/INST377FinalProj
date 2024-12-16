@@ -185,35 +185,6 @@
     </div>
 
     <script>
-               async function loadFavoriteRoutes() {
-           try {
-               const response = await fetch('http://localhost:3000/api/favorite-routes');
-               if (!response.ok) throw new Error('Failed to fetch routes');
-              
-               const data = await response.json();
-               const routesList = document.getElementById('routes-list');
-               routesList.innerHTML = ''; // Clear existing content
-
-
-               if (data.favoriteRoutes.length === 0) {
-                   routesList.innerHTML = '<li>No favorite routes added yet.</li>';
-               } else {
-                   data.favoriteRoutes.forEach(route => {
-                       const listItem = document.createElement('li');
-                       listItem.textContent = `Route ID: ${route}`;
-                       routesList.appendChild(listItem);
-                   });
-               }
-           } catch (error) {
-               console.error(error);
-           }
-       }
-
-
-       // Load favorite routes when the page loads
-       window.onload = loadFavoriteRoutes;
-
-
        // Contact form submission logic
        document.getElementById('contact-form').addEventListener('submit', function(event) {
            event.preventDefault();
